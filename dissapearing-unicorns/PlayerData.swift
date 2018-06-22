@@ -9,5 +9,8 @@
 import UIKit
 
 class PlayerData: NSObject {
-
+    var name: String
+    var points: Int
+    var rank: Int
+    var photo: UIImage?
 }
