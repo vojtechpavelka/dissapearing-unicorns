@@ -90,6 +90,9 @@ class ViewController: UIViewController {
         currentButton = gameButtons[buttonIndex]
         currentButton.center = CGPoint(x: randomXCoordinate(), y: randomYCoordinate())
         currentButton.isHidden = false
+        
+        let fontSize = Int.random(in: 18..<50)
+        currentButton.titleLabel?.font = UIFont.systemFont(ofSize: CGFloat(fontSize))
     }
     
     func gameOver() {
