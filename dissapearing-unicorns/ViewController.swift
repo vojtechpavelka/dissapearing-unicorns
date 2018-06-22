@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         pointsLabel.isHidden = true
         gameButtons = [goodButton, badButton]
         setupFreshGameState()
@@ -44,6 +45,21 @@ class ViewController: UIViewController {
         pointsLabel.textColor = .magenta
         pointsLabel.isHidden = true
         oneGameRound()
+    }
+    
+    func oneGameRound() {
+        updatePointsLabel(gamePoints)
+        displayRandomButton()
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) {
+            _ in if self.state == GameState.playing {
+                if self.currentButton == self.badButton {
+                    self.gameOver()
+                } else {
+                    self.oneGameRound()
+                }
+            }
+        }
     }
 
     @IBAction func startPressed(_ sender: Any) {
