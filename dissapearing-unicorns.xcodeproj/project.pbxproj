@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130553AF20DD7DD900E8C7EB /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130553AE20DD7DD900E8C7EB /* PlayerData.swift */; };
-		130553B120DD7EB700E8C7EB /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130553B020DD7EB700E8C7EB /* GameData.swift */; };
 		135ADE3920DD68D000D2ADE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135ADE3820DD68D000D2ADE8 /* AppDelegate.swift */; };
 		135ADE3B20DD68D100D2ADE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135ADE3A20DD68D100D2ADE8 /* ViewController.swift */; };
 		135ADE3E20DD68D100D2ADE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135ADE3C20DD68D100D2ADE8 /* Main.storyboard */; };
@@ -36,8 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		130553AE20DD7DD900E8C7EB /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
-		130553B020DD7EB700E8C7EB /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		135ADE3520DD68D000D2ADE8 /* dissapearing-unicorns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dissapearing-unicorns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		135ADE3820DD68D000D2ADE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135ADE3A20DD68D100D2ADE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,8 +103,6 @@
 				135ADE3F20DD68D200D2ADE8 /* Assets.xcassets */,
 				135ADE4120DD68D200D2ADE8 /* LaunchScreen.storyboard */,
 				135ADE4420DD68D200D2ADE8 /* Info.plist */,
-				130553AE20DD7DD900E8C7EB /* PlayerData.swift */,
-				130553B020DD7EB700E8C7EB /* GameData.swift */,
 			);
 			path = "dissapearing-unicorns";
 			sourceTree = "<group>";
@@ -262,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130553AF20DD7DD900E8C7EB /* PlayerData.swift in Sources */,
-				130553B120DD7EB700E8C7EB /* GameData.swift in Sources */,
 				135ADE3B20DD68D100D2ADE8 /* ViewController.swift in Sources */,
 				135ADE3920DD68D000D2ADE8 /* AppDelegate.swift in Sources */,
 			);
