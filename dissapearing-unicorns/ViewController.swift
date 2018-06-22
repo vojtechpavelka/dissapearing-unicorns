@@ -25,8 +25,6 @@ class ViewController: UIViewController {
     }
     
     var state = GameState.gameOver
-    var timer: Timer?
-    var currentButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +51,7 @@ class ViewController: UIViewController {
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) {
             _ in if self.state == GameState.playing {
-                if self.currentButton == self.badButton {
+                if self.currentButton == self.goodButton {
                     self.gameOver()
                 } else {
                     self.oneGameRound()
@@ -63,6 +61,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startPressed(_ sender: Any) {
+        state = GameState.playing
         startNewGame()
     }
     
@@ -79,6 +78,9 @@ class ViewController: UIViewController {
         timer?.invalidate()
         gameOver()
     }
+    
+    var timer: Timer?
+    var currentButton: UIButton!
     
     func displayRandomButton() {
         for myButton in gameButtons {

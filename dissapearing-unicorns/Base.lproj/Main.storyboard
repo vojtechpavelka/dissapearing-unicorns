@@ -38,7 +38,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                 <state key="normal" title="🦄"/>
                                 <connections>
-                                    <action selector="goodPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADe-rR-xDw"/>
                                     <action selector="goodPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="tQU-rA-QDF"/>
                                 </connections>
                             </button>
@@ -48,7 +47,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                 <state key="normal" title="💩"/>
                                 <connections>
-                                    <action selector="badPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJv-wM-DrP"/>
                                     <action selector="badPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="UAC-NY-vvL"/>
                                 </connections>
                             </button>
