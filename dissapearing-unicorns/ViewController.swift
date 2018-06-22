@@ -35,8 +35,19 @@ class ViewController: UIViewController {
         gameButtons = [goodButton, badButton]
         setupFreshGameState()
     }
+    
+    func startNewGame() {
+        startGameButton.isHidden = true
+        leaderboardButton.isHidden = true
+        gamePoints = 0
+        updatePointsLabel(gamePoints)
+        pointsLabel.textColor = .magenta
+        pointsLabel.isHidden = true
+        oneGameRound()
+    }
 
     @IBAction func startPressed(_ sender: Any) {
+        startNewGame()
     }
     
     @IBAction func goodPressed(_ sender: Any) {
