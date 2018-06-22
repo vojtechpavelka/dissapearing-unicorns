@@ -10,11 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var startGameButton: UIButton!
+    @IBOutlet weak var leaderboardButton: UIButton!
+    @IBOutlet weak var goodButton: UIButton!
+    @IBOutlet weak var badButton: UIButton!
+    @IBOutlet weak var pointsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func startPressed(_ sender: Any) {
+    }
+    
+    @IBAction func goodPressed(_ sender: Any) {
+    }
+    
+    @IBAction func badPressed(_ sender: Any) {
+    }
+    
 }
 
