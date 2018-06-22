@@ -67,9 +67,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goodPressed(_ sender: Any) {
+        gamePoints = gamePoints + 1
+        updatePointsLabel(gamePoints)
+        goodButton.isHidden = true
+        timer?.invalidate()
+        oneGameRound()
     }
     
     @IBAction func badPressed(_ sender: Any) {
+        badButton.isHidden = true
+        timer?.invalidate()
+        gameOver()
     }
     
     func displayRandomButton() {
