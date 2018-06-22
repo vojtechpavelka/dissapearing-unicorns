@@ -17,18 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uiq-oy-3ea">
-                                <rect key="frame" x="90" y="380" width="194" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uiq-oy-3ea">
+                                <rect key="frame" x="90.666666666666686" y="379.66666666666669" width="194" height="53"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                 <state key="normal" title="Start game!"/>
                                 <connections>
                                     <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frU-hm-aI6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-uH-VsL">
-                                <rect key="frame" x="139" y="441" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-uH-VsL">
+                                <rect key="frame" x="139" y="432.66666666666669" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="Leaderboard"/>
                             </button>
@@ -50,22 +48,30 @@
                                     <action selector="badPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="UAC-NY-vvL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ha-k6-yxK">
-                                <rect key="frame" x="16" y="299" width="343" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtZ-LT-tyJ">
+                                <rect key="frame" x="164" y="297.66666666666669" width="47" height="82"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="68"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NtZ-LT-tyJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dz-5g-Lep"/>
+                            <constraint firstItem="Uiq-oy-3ea" firstAttribute="top" secondItem="NtZ-LT-tyJ" secondAttribute="bottom" id="AuO-Tj-Ug5"/>
+                            <constraint firstItem="NtZ-LT-tyJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lda-fH-YAk"/>
+                            <constraint firstItem="Uiq-oy-3ea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Svt-Jr-7hf"/>
+                            <constraint firstItem="Of8-uH-VsL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8f-kK-7sc"/>
+                            <constraint firstItem="Uiq-oy-3ea" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bfd-0h-PJV"/>
+                            <constraint firstItem="Of8-uH-VsL" firstAttribute="top" secondItem="Uiq-oy-3ea" secondAttribute="bottom" id="cUv-G5-Hut"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="badButton" destination="Uuy-qj-ocA" id="JXD-NI-Zqk"/>
                         <outlet property="goodButton" destination="OdM-Yn-YwA" id="u8v-5y-gsc"/>
                         <outlet property="leaderboardButton" destination="Of8-uH-VsL" id="G0J-vT-0Na"/>
-                        <outlet property="pointsLabel" destination="7ha-k6-yxK" id="DEA-1e-DXF"/>
+                        <outlet property="pointsLabel" destination="NtZ-LT-tyJ" id="mhn-Ar-WUj"/>
                         <outlet property="startGameButton" destination="Uiq-oy-3ea" id="MdE-QK-b4g"/>
                     </connections>
                 </viewController>
