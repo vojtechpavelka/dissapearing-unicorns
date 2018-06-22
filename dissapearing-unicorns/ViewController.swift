@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         gamePoints = 0
         updatePointsLabel(gamePoints)
         pointsLabel.textColor = .magenta
-        pointsLabel.isHidden = true
+        pointsLabel.isHidden = false
         oneGameRound()
     }
     
