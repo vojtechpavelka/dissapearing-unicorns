@@ -39,6 +39,7 @@
                                 <state key="normal" title="🦄"/>
                                 <connections>
                                     <action selector="goodPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADe-rR-xDw"/>
+                                    <action selector="goodPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="tQU-rA-QDF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuy-qj-ocA">
@@ -48,6 +49,7 @@
                                 <state key="normal" title="💩"/>
                                 <connections>
                                     <action selector="badPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJv-wM-DrP"/>
+                                    <action selector="badPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="UAC-NY-vvL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ha-k6-yxK">

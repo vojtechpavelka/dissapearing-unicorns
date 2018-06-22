@@ -16,9 +16,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var badButton: UIButton!
     @IBOutlet weak var pointsLabel: UILabel!
     
+    var gameButtons = [UIButton]()
+    var gamePoints = 0
+    
+    enum GameState {
+        case gameOver
+        case playing
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        pointsLabel.isHidden = true
+        gameButtons = [goodButton, badButton]
     }
 
     @IBAction func startPressed(_ sender: Any) {
