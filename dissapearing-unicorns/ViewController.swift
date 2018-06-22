@@ -24,11 +24,16 @@ class ViewController: UIViewController {
         case playing
     }
     
+    var state = GameState.gameOver
+    var timer: Timer?
+    var currentButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         pointsLabel.isHidden = true
         gameButtons = [goodButton, badButton]
+        setupFreshGameState()
     }
 
     @IBAction func startPressed(_ sender: Any) {
@@ -40,5 +45,51 @@ class ViewController: UIViewController {
     @IBAction func badPressed(_ sender: Any) {
     }
     
+    func displayRandomButton() {
+        for myButton in gameButtons {
+            myButton.isHidden = true
+        }
+        let buttonIndex = Int.random(in: 0..<gameButtons.count)
+        currentButton = gameButtons[buttonIndex]
+        currentButton.center = CGPoint(x: randomXCoordinate(), y: randomYCoordinate())
+        currentButton.isHidden = false
+    }
+    
+    func gameOver() {
+        state = GameState.gameOver
+        pointsLabel.textColor = .brown
+        setupFreshGameState()
+    }
+    
+    func setupFreshGameState() {
+        startGameButton.isHidden = false
+        leaderboardButton.isHidden = false
+        for myButton in gameButtons {
+            myButton.isHidden = true
+        }
+        pointsLabel.alpha = 0.15
+        currentButton = goodButton
+        state = GameState.gameOver
+    }
+    
+    func randCGFloat(_ min: CGFloat, _ max: CGFloat) -> CGFloat {
+        return CGFloat.random(in: min..<max)
+    }
+    
+    func randomXCoordinate() -> CGFloat {
+        let left = view.safeAreaInsets.left + currentButton.bounds.width
+        let right = view.bounds.width - view.safeAreaInsets.right - currentButton.bounds.width
+        return randCGFloat(left, right)
+    }
+    
+    func randomYCoordinate() -> CGFloat {
+        let top = view.safeAreaInsets.top + currentButton.bounds.height
+        let bottom = view.bounds.height - view.safeAreaInsets.bottom - currentButton.bounds.height
+        return randCGFloat(top, bottom)
+    }
+    
+    func updatePointsLabel(_ newValue: Int) {
+        pointsLabel.text = "\(newValue)"
+    }
 }
 
