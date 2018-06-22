@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         currentButton.center = CGPoint(x: randomXCoordinate(), y: randomYCoordinate())
         currentButton.isHidden = false
         
-        let fontSize = Int.random(in: 18..<50)
+        let fontSize = Int.random(in: 17..<51)
         currentButton.titleLabel?.font = UIFont.systemFont(ofSize: CGFloat(fontSize))
     }
     
