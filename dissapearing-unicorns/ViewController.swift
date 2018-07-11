@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var startGameButton: UIButton!
-    @IBOutlet weak var leaderboardButton: UIButton!
     @IBOutlet weak var goodButton: UIButton!
     @IBOutlet weak var badButton: UIButton!
     @IBOutlet weak var pointsLabel: UILabel!
@@ -37,7 +36,6 @@ class ViewController: UIViewController {
     
     func startNewGame() {
         startGameButton.isHidden = true
-        leaderboardButton.isHidden = true
         gamePoints = 0
         updatePointsLabel(gamePoints)
         pointsLabel.textColor = .magenta
@@ -103,7 +101,6 @@ class ViewController: UIViewController {
     
     func setupFreshGameState() {
         startGameButton.isHidden = false
-        leaderboardButton.isHidden = false
         for myButton in gameButtons {
             myButton.isHidden = true
         }

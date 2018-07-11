@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,11 +25,6 @@
                                 <connections>
                                     <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="frU-hm-aI6"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-uH-VsL">
-                                <rect key="frame" x="139" y="432.66666666666669" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
-                                <state key="normal" title="Leaderboard"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-Yn-YwA">
                                 <rect key="frame" x="90" y="308" width="64" height="64"/>
@@ -61,16 +57,13 @@
                             <constraint firstItem="Uiq-oy-3ea" firstAttribute="top" secondItem="NtZ-LT-tyJ" secondAttribute="bottom" id="AuO-Tj-Ug5"/>
                             <constraint firstItem="NtZ-LT-tyJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lda-fH-YAk"/>
                             <constraint firstItem="Uiq-oy-3ea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Svt-Jr-7hf"/>
-                            <constraint firstItem="Of8-uH-VsL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8f-kK-7sc"/>
                             <constraint firstItem="Uiq-oy-3ea" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bfd-0h-PJV"/>
-                            <constraint firstItem="Of8-uH-VsL" firstAttribute="top" secondItem="Uiq-oy-3ea" secondAttribute="bottom" id="cUv-G5-Hut"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="badButton" destination="Uuy-qj-ocA" id="JXD-NI-Zqk"/>
                         <outlet property="goodButton" destination="OdM-Yn-YwA" id="u8v-5y-gsc"/>
-                        <outlet property="leaderboardButton" destination="Of8-uH-VsL" id="G0J-vT-0Na"/>
                         <outlet property="pointsLabel" destination="NtZ-LT-tyJ" id="mhn-Ar-WUj"/>
                         <outlet property="startGameButton" destination="Uiq-oy-3ea" id="MdE-QK-b4g"/>
                     </connections>
